@@ -4,8 +4,8 @@
 }
 
 body {
-  display: grid;
-  grid-template-rows: repeat(12, auto);
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   gap: 1rem;
 }
@@ -176,14 +176,23 @@ p {
 
 .section-6 {
   display: flex;
-  height: 100%;
+  height: 30rem;
 }
 
 .s6-text {
   height: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 1rem;
+}
+
+.s6-text h3 {
+  font-size: 2rem;
+}
+
+.s6-text p {
+  font-size: 1rem;
 }
 
 .text-2 {
@@ -221,20 +230,22 @@ p {
 .section-8 {
   display: flex;
   flex-direction: row;
+  height: 60vh;
   gap: 1rem;
 }
 
 .s8-img {
   display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
-  flex: 1;
   gap: 0.5rem;
 }
 
 .s8-img div {
   background-color: lightslategray;
-  aspect-ratio: 1/ 1;
   border-radius: 0.5rem;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,7 +263,7 @@ p {
   align-items: center;
   margin: 0 auto;
   width: 90%;
-  height: 90%;
+  height: 30rem;
 }
 
 .s9-text {
@@ -267,8 +278,9 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90%;
+  height: 30rem;
   gap: 1rem;
+  margin: 2%;
 }
 
 .s10-card {
@@ -306,7 +318,7 @@ p {
 }
 
 .s12-map {
-  flex: 1;
+  height: 20rem;
   background-color: red;
 }
 
@@ -397,7 +409,6 @@ p {
   }
 
   .s1-image {
-    aspect-ratio: 1 / 1;
     height: 100%;
     width: auto;
   }
@@ -431,5 +442,111 @@ p {
   .s3-card h3,
   .s3-card p {
     font-size: 2rem;
+  }
+
+  .s4-finder,
+  .s11-finder,
+  .s12-finder {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .s4-finder h3,
+  .s11-finder h3,
+  .s12-finder h3 {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .s4-finder input,
+  .s11-finder input,
+  .s12-finder input {
+    height: 3rem;
+    width: 70%;
+  }
+
+  .s4-finder button,
+  .s11-finder button,
+  .s12-finder button {
+    height: 3rem;
+    font-size: 1.5rem;
+    width: 20%;
+  }
+
+  .section-6 {
+    height: 40rem;
+  }
+
+  .s6-text {
+    padding: 5%;
+    gap: 2rem;
+  }
+
+  .text-2 {
+    display: flex;
+  }
+
+  .s6-text h3,
+  .s6-text p {
+    text-align: left;
+  }
+
+  .section-7 {
+    height: 35rem;
+  }
+
+  .section-8 {
+    height: 30rem;
+    align-items: stretch;
+  }
+
+  .pic-1,
+  .pic-2 {
+    display: flex;
+  }
+
+  .s8-img {
+    padding: 2%;
+  }
+
+  .section-9 {
+    height: 100vh;
+  }
+
+  .section-10 {
+    height: 70vh;
+  }
+
+  .s10-1 {
+    display: flex;
+  }
+
+  .s10-text h3,
+  .s10-text p {
+    text-align: left;
+  }
+
+  .s12-content-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .s12-logo-and-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .s12-logo-and-text p {
+    display: flex;
+  }
+
+  .s12-logo-c {
+    width: 100%;
+  }
+
+  .s12-logo-text,
+  .menu {
+    width: 100%;
   }
 }
